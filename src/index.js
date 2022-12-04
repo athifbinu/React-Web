@@ -15,6 +15,8 @@ root.render(
     <Header />
     <Banner />
     <Card />
+    <Card />
+    <Card />
     <Footer />
 
   </React.StrictMode>

@@ -81,6 +81,7 @@ body
     text-align: center;
     font-weight: bold;
     font-family: sans-serif;
+    float: left;
 
 }
 .Card img{
