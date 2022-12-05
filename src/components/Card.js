@@ -1,11 +1,12 @@
 import React from 'react'
 
-function Card() {
+function Card(props) {
   return (
     <div className='Card'>
-      <img src="https://m.media-amazon.com/images/I/617f8u0Z6iL._SX425_.jpg" alt="" />
-      <h1>name</h1>
-      <p>Raite</p>
+      <img src={props.imgSrc} alt="" />
+      <h1>{props.name}</h1>
+      <p>{props.price}</p>
+      <p>{props.comment}</p>
       <button >Add to Cart</button>
 
 
