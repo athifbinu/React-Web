@@ -112,6 +112,20 @@ body
                0 0 155px #e67e22;
 }
 
+.Card.active button {
+    background-color:#B2FF33 ;
+}
+
+.Card.active button:hover{
+    opacity: 1;
+    cursor: pointer;
+    background-color: #B2FF33; 
+    box-shadow:0 0 7px #B2FF33,
+               0 0 22px #B2FF33,
+               0 0 22px #B2FF33,
+               0 0 62px #B2FF33,
+               0 0 155px #B2FF33;
+}
 
 
 

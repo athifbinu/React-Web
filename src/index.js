@@ -12,6 +12,8 @@ import './components/Generel.css'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+
+    
     <App />
     <Header />
     <Banner />
@@ -19,6 +21,8 @@ root.render(
            name="dog food"
            price={faker.commerce.price()}
            comment="good Quality"
+        
+      
            
            />
     <Card 
@@ -45,14 +49,7 @@ root.render(
         
         />
 
-
-    <Card
-            imgSrc="https://m.media-amazon.com/images/I/616UBK7THSL._SX425_.jpg"
-            name={faker.name.firstName()}
-            price={faker.commerce.price()}
-           comment="number one quality"
-        
-        />
+   
 
 
 
