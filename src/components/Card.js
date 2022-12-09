@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react'
-import App from '../App'
+import heart from "../components/imgs/hert.png"
+
 function Card(props) {
 
   let favorites=useState("add to cart")
@@ -41,17 +42,22 @@ function Card(props) {
   return (
 
     <div className={`Card ${classState}`}>
-    
+      <img src={heart} className="icon" alt="" />
       <img src={props.imgSrc} alt="" />
       <h1>{props.name}</h1>
       <p>{props.price}</p>
       <p>{props.comment}</p>
       <button onClick={addtofavorite} >{btnTextState}</button>
-   
-       
+        
+      
 
     </div>
+ 
+
+
   )
+
+
 }
 
 export default Card

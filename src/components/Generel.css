@@ -82,6 +82,8 @@ body
     font-weight: bold;
     font-family: sans-serif;
     float: left;
+    position: relative;
+    
     
 
 }
@@ -126,6 +128,22 @@ body
                0 0 62px #B2FF33,
                0 0 155px #B2FF33;
 }
+.Card .icon{
+    width:30px;
+    height: 30px;
+    top: 30px;
+    position:absolute;
+    right: 3px;
+      display: none;
+    
+
+}
+.Card.active .icon{
+       display: block;
+       
+}
+
+
 
 
 
