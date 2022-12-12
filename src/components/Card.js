@@ -10,7 +10,7 @@ function Card(props) {
    
 
 
-  let [btnTextState, setbtnTextState]=favorites   //1st stste
+  let [btnTextState, setbtnTextState]=favorites   //1st stste  //text change
 
   let [classState,setClassState]=activeClass       //second state
    
@@ -20,15 +20,23 @@ function Card(props) {
 
 
    //change modify state
-        function addtofavorite(){
+
+        //text changing
+        function addtofavorite(imgSrc){
+      
        setbtnTextState((prevState)=>{
         if(prevState==="add to cart"){
+          // getFavImages(imgSrc)
           return "adeded to cart"
         }else{
           return "add to cart"
         }
+          
        })
 
+       
+
+          //btn colour changing
        setClassState((prevState)=>{
         if(prevState == ""){
           return "active"
@@ -37,8 +45,6 @@ function Card(props) {
         }
        })
      }
-
-
   return (
 
     <div className={`Card ${classState}`}>
@@ -47,14 +53,14 @@ function Card(props) {
       <h1>{props.name}</h1>
       <p>{props.price}</p>
       <p>{props.comment}</p>
-      <button onClick={addtofavorite} >{btnTextState}</button>
-        
-      
 
+      <button
+      onClick={()=>{
+         addtofavorite(props.imgSrc)
+          console.log(props.imgSrc)
+      }}>{btnTextState}</button>
     </div>
  
-
-
   )
 
 

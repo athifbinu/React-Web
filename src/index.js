@@ -5,7 +5,7 @@ import { faker } from '@faker-js/faker';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import Card from './components/Card'
-import Footer from './components/Footer'
+import Cart from './components/Cart'
 import './components/Generel.css'
 
 
@@ -50,6 +50,20 @@ root.render(
 
         
         />
+        
+
+<Card
+            imgSrc="https://m.media-amazon.com/images/I/616UBK7THSL._SX425_.jpg"
+            name={faker.name.firstName()}
+            price={faker.commerce.price()}
+           comment="number one quality"
+
+        
+        />
+        
+
+     <Cart/>
+
 
         
 
@@ -58,7 +72,7 @@ root.render(
 
 
 
-    <Footer />
+    
 
   </React.StrictMode>
 );
